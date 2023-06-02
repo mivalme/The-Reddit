@@ -5,5 +5,6 @@ target 'The Reddit' do
 
   # Pods for The Reddit
   pod 'Alamofire'
+  pod 'SDWebImage', :modular_headers => true
 
 end

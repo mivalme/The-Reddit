@@ -19,6 +19,20 @@ struct GetIAllPostsResponse: Codable {
         
         struct ChildrenData: Codable {
             let title: String
+            let author: String
+            let created: Double
+            let thumbnail: String
+            let numComments: Int
+            let subreddit: String
+            
+            enum CodingKeys: String, CodingKey {
+                case title
+                case author
+                case created
+                case thumbnail
+                case numComments = "num_comments"
+                case subreddit
+            }
         }
     }
 }
