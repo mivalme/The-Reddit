@@ -14,6 +14,7 @@ protocol FeedInteractorProtocol {
 protocol FeedPresenterProtocol {
     func viewDidLoad()
     func reachedEndOfTable()
+    func didSelectPost(selectedPost: FeedModel.Post)
 }
 
 protocol FeedInteractorOutputProtocol: AnyObject {
@@ -21,7 +22,7 @@ protocol FeedInteractorOutputProtocol: AnyObject {
 }
 
 protocol FeedRouterProtocol {
-    
+    func goToPostDetail(selectedPost: FeedModel.Post)
 }
 
 protocol FeedViewProtocol: AnyObject {

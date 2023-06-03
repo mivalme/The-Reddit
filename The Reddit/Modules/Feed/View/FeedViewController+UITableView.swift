@@ -26,6 +26,11 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource  {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedPost = postsListDataSource[safeIndex: indexPath.row] else { return }
+        self.presenter?.didSelectPost(selectedPost: selectedPost)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if postsTableView.contentOffset.y >= (postsTableView.contentSize.height - postsTableView.frame.size.height) {
             blurView.isHidden = false

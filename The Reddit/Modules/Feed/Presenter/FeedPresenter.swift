@@ -24,6 +24,10 @@ class FeedPresenter: FeedPresenterProtocol {
         fetchedIds.append(afterId)
         interactor?.fetchPosts(after: afterId)
     }
+    
+    func didSelectPost(selectedPost: FeedModel.Post) {
+        router?.goToPostDetail(selectedPost: selectedPost)
+    }
 }
 
 extension FeedPresenter: FeedInteractorOutputProtocol {
