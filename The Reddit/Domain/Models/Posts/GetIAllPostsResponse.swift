@@ -11,6 +11,7 @@ struct GetIAllPostsResponse: Codable {
     let data: ResponseData
     
     struct ResponseData: Codable {
+        let after: String
         let children: [Children]
     }
     
