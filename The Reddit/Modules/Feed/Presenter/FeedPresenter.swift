@@ -35,4 +35,8 @@ extension FeedPresenter: FeedInteractorOutputProtocol {
         self.afterId = afterId
         view?.displayPostsList(model: posts)
     }
+    
+    func fetchedPostsFailure(errorMessage: String) {
+        view?.showErrorAlert(errorMessage: errorMessage)
+    }
 }

@@ -38,4 +38,11 @@ extension FeedViewController: FeedViewProtocol {
         postsListDataSource.append(contentsOf: model)
         postsTableView.reloadData()
     }
+    
+    func showErrorAlert(errorMessage: String) {
+        let alert = UIAlertController(title: TheRedditLocalizables.errorAlertTitle, message: errorMessage, preferredStyle: .alert)
+        let continueAction = UIAlertAction(title: TheRedditLocalizables.errorAlertButtonTitle, style: .default, handler: nil)
+        alert.addAction(continueAction)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
