@@ -1,0 +1,12 @@
+/* 
+  TheRedditLocalizables.strings
+  The Reddit
+
+  Created by Miguel Valcárcel on 2/06/23.
+  
+*/
+
+"subreddit_title" = "Subreddit: %@";
+"author_title" = "Author: %@";
+"comments_title" = "Comments: %d";
+"createdAt_title" = "Created at: %@";

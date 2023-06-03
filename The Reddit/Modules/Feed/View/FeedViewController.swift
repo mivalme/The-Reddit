@@ -27,7 +27,7 @@ class FeedViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
+        self.title = "Posts"
         setUpTableView()
         presenter?.viewDidLoad()
     }

@@ -37,7 +37,7 @@ class PostTableViewCell: UITableViewCell {
             thumbnailImageView.sd_setImage(with: url, placeholderImage: .init(named: "placeholder"))
         }
         
-        commentsQuantityLabel.text = "Comments: \(model.commentsQuantity)"
+        commentsQuantityLabel.text = String(format: TheRedditLocalizables.commentsTitle, arguments: [model.commentsQuantity])
         createdAtLabel.text = model.date
     }
 }

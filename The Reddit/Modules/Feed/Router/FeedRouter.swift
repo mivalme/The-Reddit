@@ -27,4 +27,9 @@ class FeedRouter: FeedRouterProtocol {
         ref.presenter = presenter
         return ref
     }
+    
+    func goToPostDetail(selectedPost: FeedModel.Post) {
+        let postDetailViewController = PostDetailRouter.createModule(selectedPost: selectedPost)
+        self.viewController?.navigationController?.pushViewController(postDetailViewController, animated: true)
+    }
 }
