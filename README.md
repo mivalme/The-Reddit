@@ -4,6 +4,13 @@ _In this repository you will find the iOS developer test made for The Grint_
 
 _By Miguel Angel Valcarcel Menivelso_
 
+## Screenshots
+
+<img src="https://github.com/mivalme/The-Reddit/assets/33386326/6b2fc81f-55ad-417f-91e0-d02556b7b39a" width="250"> <img src="https://github.com/mivalme/The-Reddit/assets/33386326/d2f49c29-ca23-4463-ae8e-e0fa447ab88d" width="250"> <img src="https://github.com/mivalme/The-Reddit/assets/33386326/9fa96742-0f17-41b2-9704-97190617d8f4" width="250">
+
+
+
+
 ## Let's start 🚀
 
 _These instructions allow you to obtain a copy of the project in operation on your local machine to be able to test._
