@@ -9,3 +9,12 @@ target 'The Reddit' do
   pod 'SDWebImage', :modular_headers => true
 
 end
+
+target 'The RedditTests' do
+
+  # Pods for The RedditTests
+  pod 'Alamofire'
+  pod 'lottie-ios'
+  pod 'SDWebImage', :modular_headers => true
+
+end

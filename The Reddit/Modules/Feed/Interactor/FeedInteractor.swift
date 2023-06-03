@@ -30,9 +30,9 @@ class FeedInteractor: FeedInteractorProtocol {
                                                                              subreddit: $0.data.subreddit) })
                 self.presenter?.fetchedPostsSuccess(posts: model, afterId: data.data.after)
             case .failure :
-                break
+                self.presenter?.fetchedPostsFailure(errorMessage: TheRedditLocalizables.errorDefaultMessage)
             case .notConnectedToInternet:
-                break
+                self.presenter?.fetchedPostsFailure(errorMessage: TheRedditLocalizables.noInternetConnectionMessage)
             }
         })
     }

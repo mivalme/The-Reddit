@@ -19,6 +19,7 @@ protocol FeedPresenterProtocol {
 
 protocol FeedInteractorOutputProtocol: AnyObject {
     func fetchedPostsSuccess(posts: [FeedModel.Post], afterId: String)
+    func fetchedPostsFailure(errorMessage: String)
 }
 
 protocol FeedRouterProtocol {
@@ -27,4 +28,5 @@ protocol FeedRouterProtocol {
 
 protocol FeedViewProtocol: AnyObject {
     func displayPostsList(model: [FeedModel.Post])
+    func showErrorAlert(errorMessage: String)
 }

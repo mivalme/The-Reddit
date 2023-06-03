@@ -10,3 +10,7 @@
 "author_title" = "Author: %@";
 "comments_title" = "Comments: %d";
 "createdAt_title" = "Created at: %@";
+"no_internet_connection_error_message" = "No tienes conexión a internet";
+"error_default_message" = "Hubo un error, intenta de nuevo";
+"error_alert_title" = "Error";
+"error_alert_button_title" = "Continuar";
