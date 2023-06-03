@@ -9,6 +9,7 @@ import UIKit
 import SDWebImage
 
 class PostTableViewCell: UITableViewCell {
+    @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var subredditLabel: UILabel!
     @IBOutlet private weak var authorLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
@@ -18,6 +19,10 @@ class PostTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
+        containerView.layer.cornerRadius = 8
+        containerView.backgroundColor = .orange.withAlphaComponent(0.1)
+        containerView.dropShadow()
     }
     
     override func prepareForReuse() {

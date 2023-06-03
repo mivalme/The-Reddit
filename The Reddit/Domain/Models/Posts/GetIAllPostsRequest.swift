@@ -8,5 +8,5 @@
 import Foundation
 
 struct GetIAllPostsRequest: Codable {
-    
+    let after: String?
 }

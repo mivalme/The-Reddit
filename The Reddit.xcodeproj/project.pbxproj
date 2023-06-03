@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		26F9C1D93AA4E3FEE3012A47 /* libPods-The Reddit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7B9AC6D4273DDBB5E17C92 /* libPods-The Reddit.a */; };
+		F00A885B2A2AC4480051AB03 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = F00A885A2A2AC4480051AB03 /* loading.json */; };
+		F00A885D2A2ACEF80051AB03 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A885C2A2ACEF80051AB03 /* UIView.swift */; };
+		F097A50C2A29D7AC006484E2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097A50B2A29D7AC006484E2 /* Array.swift */; };
+		F097A50E2A29DB80006484E2 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097A50D2A29DB80006484E2 /* Double.swift */; };
 		F0AC21962A297AEC00EB45D2 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AC21952A297AEC00EB45D2 /* Feed.storyboard */; };
 		F0AC21982A297B0300EB45D2 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC21972A297B0300EB45D2 /* FeedViewController.swift */; };
 		F0AC219A2A297C5200EB45D2 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AC21992A297C5200EB45D2 /* Storyboarded.swift */; };
@@ -60,6 +64,10 @@
 /* Begin PBXFileReference section */
 		85B3BD597EE127DE3BABB04E /* Pods-The Reddit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Reddit.debug.xcconfig"; path = "Target Support Files/Pods-The Reddit/Pods-The Reddit.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7B9AC6D4273DDBB5E17C92 /* libPods-The Reddit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-The Reddit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00A885A2A2AC4480051AB03 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		F00A885C2A2ACEF80051AB03 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F097A50B2A29D7AC006484E2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F097A50D2A29DB80006484E2 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F0AC21952A297AEC00EB45D2 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		F0AC21972A297B0300EB45D2 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F0AC21992A297C5200EB45D2 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
@@ -200,6 +208,7 @@
 			children = (
 				F0DC5E722A26610E00FA741B /* AppDelegate.swift */,
 				F0DC5E7B2A26610F00FA741B /* Assets.xcassets */,
+				F00A885A2A2AC4480051AB03 /* loading.json */,
 				F0F395DE2A2836970049B7CF /* Common */,
 				F0F395D12A2836540049B7CF /* Data */,
 				F0F395E62A2853200049B7CF /* Domain */,
@@ -277,6 +286,9 @@
 				F0F395E12A2836970049B7CF /* Encodable.swift */,
 				F0AC21992A297C5200EB45D2 /* Storyboarded.swift */,
 				F0AC21AC2A29A13000EB45D2 /* UIView+Utils.swift */,
+				F097A50B2A29D7AC006484E2 /* Array.swift */,
+				F097A50D2A29DB80006484E2 /* Double.swift */,
+				F00A885C2A2ACEF80051AB03 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -491,6 +503,7 @@
 				F0DC5E7C2A26610F00FA741B /* Assets.xcassets in Resources */,
 				F0AC21962A297AEC00EB45D2 /* Feed.storyboard in Resources */,
 				F0AC21A92A29A02200EB45D2 /* PostTableViewCell.xib in Resources */,
+				F00A885B2A2AC4480051AB03 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,8 +560,10 @@
 				F0F395EE2A2854300049B7CF /* PostsUseCase.swift in Sources */,
 				F0AC21982A297B0300EB45D2 /* FeedViewController.swift in Sources */,
 				F0AC219C2A297C7E00EB45D2 /* Storyboards.swift in Sources */,
+				F097A50E2A29DB80006484E2 /* Double.swift in Sources */,
 				F0F395DA2A2836540049B7CF /* DataConstants.swift in Sources */,
 				F0AC219A2A297C5200EB45D2 /* Storyboarded.swift in Sources */,
+				F097A50C2A29D7AC006484E2 /* Array.swift in Sources */,
 				F0F395DB2A2836540049B7CF /* RemoteRepository.swift in Sources */,
 				F0F395DC2A2836540049B7CF /* ServiceProtocol.swift in Sources */,
 				F0AC21AD2A29A13000EB45D2 /* UIView+Utils.swift in Sources */,
@@ -562,6 +577,7 @@
 				F0F396022A2977090049B7CF /* FeedRouter.swift in Sources */,
 				F0F396002A2976FC0049B7CF /* FeedPresenter.swift in Sources */,
 				F0F395F62A2856110049B7CF /* GetIAllPostsResponse.swift in Sources */,
+				F00A885D2A2ACEF80051AB03 /* UIView.swift in Sources */,
 				F0F395FE2A2976EF0049B7CF /* FeedInteractor.swift in Sources */,
 				F0F395F02A28543B0049B7CF /* PostsUseCaseProtocol.swift in Sources */,
 				F0AC21A62A2997C300EB45D2 /* FeedModel.swift in Sources */,

@@ -12,13 +12,23 @@ class FeedPresenter: FeedPresenterProtocol {
     var router: FeedRouterProtocol?
     var interactor: FeedInteractorProtocol?
     
+    var afterId: String = ""
+    var fetchedIds: [String] = []
+    
     func viewDidLoad() {
-        interactor?.fetchPosts()
+        interactor?.fetchPosts(after: nil)
+    }
+    
+    func reachedEndOfTable() {
+        guard !fetchedIds.contains(afterId) else { return }
+        fetchedIds.append(afterId)
+        interactor?.fetchPosts(after: afterId)
     }
 }
 
 extension FeedPresenter: FeedInteractorOutputProtocol {
-    func fetchedPostsSuccess(posts: [FeedModel.Post]) {
+    func fetchedPostsSuccess(posts: [FeedModel.Post], afterId: String) {
+        self.afterId = afterId
         view?.displayPostsList(model: posts)
     }
 }

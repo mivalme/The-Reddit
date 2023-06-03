@@ -8,15 +8,16 @@
 import Foundation
 
 protocol FeedInteractorProtocol {
-    func fetchPosts()
+    func fetchPosts(after: String?)
 }
 
 protocol FeedPresenterProtocol {
     func viewDidLoad()
+    func reachedEndOfTable()
 }
 
 protocol FeedInteractorOutputProtocol: AnyObject {
-    func fetchedPostsSuccess(posts: [FeedModel.Post])
+    func fetchedPostsSuccess(posts: [FeedModel.Post], afterId: String)
 }
 
 protocol FeedRouterProtocol {
